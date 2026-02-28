@@ -1,0 +1,83 @@
+.cp-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cp-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  width: 90%;
+  max-width: 480px;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: #a5b4fc;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.back-btn:hover {
+  color: #ffffff;
+}
+
+.cp-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.cp-subtitle {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 32px;
+}
+
+.cp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Make MUI inputs white text on dark background */
+.cp-form .MuiOutlinedInput-root {
+  color: #ffffff;
+}
+
+.cp-form .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.cp-form .MuiInputLabel-root {
+  color: #9ca3af !important;
+}
+
+.cp-form .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #6366f1 !important;
+}
+
+.cp-form .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #6366f1 !important;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6) !important;
+  padding: 12px !important;
+  border-radius: 12px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  margin-top: 8px !important;
+}
