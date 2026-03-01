@@ -1,8 +1,12 @@
 import "./College.css"
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack'
+import { useNavigate } from "react-router-dom"
 
 export default function CollegePortal(){
+
+  const navigate = useNavigate();
+
     return(
         <>
         <div className="clg-title">
@@ -16,13 +20,13 @@ export default function CollegePortal(){
           alignItems="center"
           sx={{ mt: 10 }}
         >
-          <Button variant="contained" size="large" className="btn">
+          <Button variant="contained" size="large" className="btn" onClick={() => navigate("/college/create")}>
             Create student marksheet
           </Button>
-          <Button variant="contained" size="large" className="btn">
+          <Button variant="contained" size="large" className="btn" onClick={() => navigate("/college/edit")}>
             Edit student marksheet
           </Button>
-          <Button variant="contained" size="large" className="btn">
+          <Button variant="contained" size="large" className="btn" onClick={() => navigate("/college/delete")}>
             Delete student marksheet
           </Button>
         </Stack>
